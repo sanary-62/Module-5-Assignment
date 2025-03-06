@@ -30,7 +30,7 @@
             <div class="navbar-end flex gap-4">
               <button class="btn border p-4 rounded-3xl bg-[#F4F7FF]">
                 <img src="assets/checkbox.png" alt="">
-                <p class="text-xl">23</p>
+                <p id="task-counter" class="text-xl">23</p>
               </button>
               <button class="btn border rounded-full w-14 h-12 bg-[#F4F7FF]">
                 <img src="assets/theme-btn.png" alt="">
@@ -45,7 +45,7 @@
                         <img class="bg-white" src="assets/checkbox.png" alt="">
                         <div>
                             <p class=" text-[#00303C] px-4 py-2 rounded-lg">Task Assigned</p>
-                        <p class="text-2xl font-bold text-[#00303C] ml-4">05</p>
+                        <p id="task-assigned" class="text-2xl font-bold text-[#00303C] ml-4">05</p>
                         </div>
                     </div>
                     <div id="discover" class="bg-gradient-to-r from-[#3752FD] via-[#6C7FFA] to-[#9BA8F8] text-white p-4 rounded-xl flex gap-4 w-96 ml-10">
@@ -75,7 +75,7 @@
                                 <span class="text-[#00303CB3] text-sm">Deadline</span> <br>
                             <span class="font-medium text-[#00303C]">21 March 2025</span>
                             </div>
-                            <button id="complete-btn" class="bg-[#3752FD] text-white rounded-lg px-2 font-medium">Completed</button>
+                            <button class="bg-[#3752FD] text-white rounded-lg px-2 font-medium complete-btn">Completed</button>
                         </div>
                     </div>
                     <!-- CloudSync -->
@@ -90,7 +90,7 @@
                                 <span class="text-[#00303CB3] text-sm">Deadline</span> <br>
                             <span class="font-medium text-[#00303C]">21 March 2025</span>
                             </div>
-                            <button id="complete-btn" class="bg-[#3752FD] text-white rounded-lg px-2 font-medium">Completed</button>
+                            <button class="bg-[#3752FD] text-white rounded-lg px-2 font-medium complete-btn">Completed</button>
                         </div>
                     </div>
                     <!-- SwiftPay -->
@@ -105,7 +105,7 @@
                                 <span class="text-[#00303CB3] text-sm">Deadline</span> <br>
                             <span class="font-medium text-[#00303C]">21 March 2025</span>
                             </div>
-                            <button id="complete-btn" class="bg-[#3752FD] text-white rounded-lg px-2 font-medium">Completed</button>
+                            <button class="bg-[#3752FD] text-white rounded-lg px-2 font-medium complete-btn">Completed</button>
                         </div>
                     </div>
                     <!-- Meta -->
@@ -120,7 +120,7 @@
                                 <span class="text-[#00303CB3] text-sm">Deadline</span> <br>
                             <span class="font-medium text-[#00303C]">21 March 2025</span>
                             </div>
-                            <button id="complete-btn" class="bg-[#3752FD] text-white rounded-lg px-2 font-medium">Completed</button>
+                            <button class="bg-[#3752FD] text-white rounded-lg px-2 font-medium complete-btn">Completed</button>
                         </div>
                     </div>
                     <!-- Google LLC -->
@@ -135,7 +135,7 @@
                                 <span class="text-[#00303CB3] text-sm">Deadline</span> <br>
                             <span class="font-medium text-[#00303C]">21 March 2025</span>
                             </div>
-                            <button id="complete-btn" class="bg-[#3752FD] text-white rounded-lg px-2 font-medium">Completed</button>
+                            <button class="bg-[#3752FD] text-white rounded-lg px-2 font-medium complete-btn">Completed</button>
                         </div>
                     </div>
                     <!-- Glassdoar -->
@@ -150,7 +150,7 @@
                                 <span class="text-[#00303CB3] text-sm">Deadline</span> <br>
                             <span class="font-medium text-[#00303C]">21 March 2025</span>
                             </div>
-                            <button id="complete-btn" class="bg-[#3752FD] text-white rounded-lg px-2 font-medium">Completed</button>
+                            <button class="bg-[#3752FD] text-white rounded-lg px-2 font-medium complete-btn">Completed</button>
                         </div>
                     </div>
                 </div>
@@ -163,16 +163,19 @@
                         <img class="h-6 w-6" src="assets/activity.png" alt="">
                     <h2 class="text-lg font-medium text-[#00303C]">Activity Log</h2>
                     </div>
-                    <button class="bg-[#3752FD] text-white rounded-lg p-2 font-medium ml-20 mb-3">Clear History</button>
+                    <button class="bg-[#3752FD] text-white rounded-lg p-2 font-medium ml-32 mb-3 clearHistory-btn">Clear History</button>
                 </div>
-                <div class="mt-4 mb-96">
-                    <div class="bg-[#F4F7FF] p-3 rounded-lg  mb-6 text-[#00303CB3]">You have completed the task "Add Dark Mode" at 12:48:15 PM</div>
-                    <div class="bg-[#F4F7FF] p-3 rounded-lg  text-[#00303CB3]">You have completed the task "Add Dark Mode" at 12:48:15 PM</div>
+                <div class="mt-4 mb-96 activity-log">
+                    <div class="activity-log">
+                    <!-- <div class="bg-[#F4F7FF] p-3 rounded-lg  mb-6 text-[#00303CB3]">You have completed the task "Add Dark Mode" at 12:48:15 PM</div>
+                    <div class="bg-[#F4F7FF] p-3 rounded-lg  text-[#00303CB3]">You have completed the task "Add Dark Mode" at 12:48:15 PM</div> -->
+                </div>
                 </div>
             </div>
         </section>
         <!-- JavaScript -->
          <script src="./script/complete.js"></script>
          <script src="./script/discover.js"></script>
+         <script src="./script/clear.js"></script>
     </body>
 </html>
