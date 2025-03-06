@@ -38,7 +38,6 @@
             </div>
         </nav>
         <section class="grid grid-cols-4 gap-6 items-start">
-        
             <!-- Left Section (Task Overview) -->
             <div class="col-span-3 bottom-2 bg-white">
                 <div class="flex justify-between items-center bg-white rounded-xl p-6 border-b-2 border-dashed border-[#3752FD33]">
@@ -49,7 +48,7 @@
                         <p class="text-2xl font-bold text-[#00303C] ml-4">05</p>
                         </div>
                     </div>
-                    <div class="bg-gradient-to-r from-[#3752FD] via-[#6C7FFA] to-[#9BA8F8] text-white p-4 rounded-xl flex gap-4 w-96 ml-10">
+                    <div id="discover" class="bg-gradient-to-r from-[#3752FD] via-[#6C7FFA] to-[#9BA8F8] text-white p-4 rounded-xl flex gap-4 w-96 ml-10">
                         <img class="h-14 w-14" src="assets/board.png" alt="">
                         <h2 class="text-lg font-medium mt-3 ml-6"> Discover Something <br>New Today!</h2>
                     </div>
@@ -76,7 +75,7 @@
                                 <span class="text-[#00303CB3] text-sm">Deadline</span> <br>
                             <span class="font-medium text-[#00303C]">21 March 2025</span>
                             </div>
-                            <button class="bg-[#3752FD] text-white rounded-lg px-2 font-medium">Completed</button>
+                            <button id="complete-btn" class="bg-[#3752FD] text-white rounded-lg px-2 font-medium">Completed</button>
                         </div>
                     </div>
                     <!-- CloudSync -->
@@ -91,7 +90,7 @@
                                 <span class="text-[#00303CB3] text-sm">Deadline</span> <br>
                             <span class="font-medium text-[#00303C]">21 March 2025</span>
                             </div>
-                            <button class="bg-[#3752FD] text-white rounded-lg px-2 font-medium">Completed</button>
+                            <button id="complete-btn" class="bg-[#3752FD] text-white rounded-lg px-2 font-medium">Completed</button>
                         </div>
                     </div>
                     <!-- SwiftPay -->
@@ -106,7 +105,7 @@
                                 <span class="text-[#00303CB3] text-sm">Deadline</span> <br>
                             <span class="font-medium text-[#00303C]">21 March 2025</span>
                             </div>
-                            <button class="bg-[#3752FD] text-white rounded-lg px-2 font-medium">Completed</button>
+                            <button id="complete-btn" class="bg-[#3752FD] text-white rounded-lg px-2 font-medium">Completed</button>
                         </div>
                     </div>
                     <!-- Meta -->
@@ -121,7 +120,7 @@
                                 <span class="text-[#00303CB3] text-sm">Deadline</span> <br>
                             <span class="font-medium text-[#00303C]">21 March 2025</span>
                             </div>
-                            <button class="bg-[#3752FD] text-white rounded-lg px-2 font-medium">Completed</button>
+                            <button id="complete-btn" class="bg-[#3752FD] text-white rounded-lg px-2 font-medium">Completed</button>
                         </div>
                     </div>
                     <!-- Google LLC -->
@@ -136,7 +135,7 @@
                                 <span class="text-[#00303CB3] text-sm">Deadline</span> <br>
                             <span class="font-medium text-[#00303C]">21 March 2025</span>
                             </div>
-                            <button class="bg-[#3752FD] text-white rounded-lg px-2 font-medium">Completed</button>
+                            <button id="complete-btn" class="bg-[#3752FD] text-white rounded-lg px-2 font-medium">Completed</button>
                         </div>
                     </div>
                     <!-- Glassdoar -->
@@ -151,14 +150,14 @@
                                 <span class="text-[#00303CB3] text-sm">Deadline</span> <br>
                             <span class="font-medium text-[#00303C]">21 March 2025</span>
                             </div>
-                            <button class="bg-[#3752FD] text-white rounded-lg px-2 font-medium">Completed</button>
+                            <button id="complete-btn" class="bg-[#3752FD] text-white rounded-lg px-2 font-medium">Completed</button>
                         </div>
                     </div>
                 </div>
             </div>
             
             <!-- Right Section (Activity Log) -->
-            <div class="col-span-1 bg-white rounded-xl p-6 ">
+            <div class="col-span-1 bg-white rounded-xl p-6  ">
                 <div class="border-b-2 border-dashed border-[#3752FD33]">
                     <div class="flex gap-4 items-center justify-center mb-4">
                         <img class="h-6 w-6" src="assets/activity.png" alt="">
@@ -172,5 +171,8 @@
                 </div>
             </div>
         </section>
-        </body>
+        <!-- JavaScript -->
+         <script src="./script/complete.js"></script>
+         <script src="./script/discover.js"></script>
+    </body>
 </html>
